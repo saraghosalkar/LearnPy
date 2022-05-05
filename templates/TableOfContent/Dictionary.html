@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<main class="mainBody">
+    <h1>Dictionary</h1>
+    <p>Dictionaries are used to store data values in key:value pairs.</p>
+    <p>A dictionary is a collection which is ordered, changeable and do not allow duplicates.</p>
+    <p>Dictionaries are written with curly brackets, and have keys and values:</p>
+    <h3>Example :</h3>
+    <pre>
+
+        thisdict = {
+            "brand": "Ford",
+            "model": "Mustang",
+            "year": 1964
+          }
+          print(thisdict)
+    </pre>
+    <h2>Dictionary Items</h2>
+    <p>Dictionary items are ordered, changeable, and does not allow duplicates.</p>
+    <p>Dictionary items are presented in key:value pairs, and can be referred to by using the key name.</p>
+    <h2>Ordered or Unordered ? </h2>
+    <p>When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change.</p>
+    <p>Unordered means that the items does not have a defined order, you cannot refer to an item by using an index.</p>
+    <h2>Changeable</h2>
+    <p>Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.</p>
+    <h2>Type</h2>
+    <p>From Python's perspective, dictionaries are defined as objects with the data type 'dict':</p>
+    <pre>
+
+        type(thisdict)
+    </pre>
+    
+    <a href="/quiz/Dictionary"><button type="button">Start Quiz</button></a>
+    <!-- <a href="/quiz/{{comments}}"><button type="button">Start Quiz</button></a> -->
+</main>
+{% endblock body %}

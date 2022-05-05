@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<main class="mainBody">
+    <h1>Set</h1>
+    <p>Sets are used to store multiple items in a single variable.</p>
+    <p>Set is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Tuple, and Dictionary, all with different qualities and usage.</p>
+    <p>A set is a collection which is unordered, unchangeable, and unindexed.</p>
+    <p>Set items are unchangeable, but you can remove items and add new items.</p>
+    <p>Sets are written with curly brackets.</p>
+    <h3>Example :</h3>
+    <pre>
+
+        thisset = {"apple", "banana", "cherry"}
+        print(thisset)
+    </pre>
+    <h2>Set Items</h2>
+    <p>Set items are unordered, unchangeable, and do not allow duplicate values.</p>
+    <h2>Unordered</h2>
+    <p>Unordered means that the items in a set do not have a defined order.</p>
+    <p>Set items can appear in a different order every time you use them, and cannot be referred to by index or key.</p>
+    <h2>Unchangeable</h2>
+    <p>Set items are unchangeable, meaning that we cannot change the items after the set has been created.</p>
+    <h2>Type</h2>
+    <p>From Python's perspective, sets are defined as objects with the data type 'set':</p>
+    <pre>
+
+        type(thisset)
+    </pre>
+    
+    <a href="/quiz/set"><button type="button">Start Quiz</button></a>
+    <!-- <a href="/quiz/{{comments}}"><button type="button">Start Quiz</button></a> -->
+</main>
+{% endblock body %}

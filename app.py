@@ -103,9 +103,9 @@ def evaluate():
 def comments():
     return render_template('TableOfContent/comments.html')
 
-# @app.route('/dictionary')
-# def dictionary():
-#     return render_template('TableOfContent/dictionary.html')
+@app.route('/Dictionary')
+def Dictionary():
+     return render_template('TableOfContent/Dictionary.html')
 
 @app.route('/functions')
 def functions():
@@ -123,9 +123,9 @@ def loops():
 def numbers():
     return render_template('TableOfContent/numbers.html')
 
-# @app.route('/sets')
-# def sets():
-#     return render_template('TableOfContent/sets.html')
+@app.route('/set')
+def sets():
+    return render_template('TableOfContent/set.html')
 
 # @app.route('/string')
 # def string():
