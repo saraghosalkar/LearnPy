@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<main class="mainBody">
+    <h1>Tuples</h1>
+    <p>Tuples are used to store multiple items in a single variable.</p>
+    <p>Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.</p>
+    <p>A tuple is a collection which is ordered and unchangeable.</p>
+    <p>Tuples are written with round brackets. Here's how they are created : </p>
+    <h3>Example :</h3>
+    <pre>
+
+        thistuple = ("apple", "banana", "cherry")
+        print(thistuple)
+    </pre>
+    <h2>Tuple Items</h2>
+    <p>Tuple items are ordered, unchangeable, and allow duplicate values.</p>
+    <h2>Ordered</h2>
+    <p>When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</p>
+    <h2>Unchangeable</h2>
+    <p>Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</p>
+    <h2>Type</h2>
+    <p>From Python's perspective, tuples are defined as objects with the data type 'tuple':</p>
+    <pre>
+
+        type(thistuple)
+    </pre>
+    
+    <a href="/quiz/tuples"><button type="button">Start Quiz</button></a>
+    <!-- <a href="/quiz/{{comments}}"><button type="button">Start Quiz</button></a> -->
+</main>
+{% endblock body %}

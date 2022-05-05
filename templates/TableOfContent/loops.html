@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<main class="mainBody">
+    <h1>Loops in Python</h1>
+    <p>Python programming language provides the following types of loops to handle looping requirements. Python provides three ways for executing the loops. While all the ways provide similar basic functionality, they differ in their syntax and condition checking time.</p>
+    <h2>While Loop</h2>
+    <p>In python, while loop is used to execute a block of statements repeatedly until a given condition is satisfied. And when the condition becomes false, the line immediately after the loop in the program is executed.</p>
+    <h3>Syntax : </h3>
+    <pre>
+
+        while expression:
+            statement(s)
+    </pre>
+    <p> All the statements indented by the same number of character spaces after a programming construct are considered to be part of a single block of code. Python uses indentation as its method of grouping statements. </p>
+    <h3>Example :</h3>
+    <pre>
+
+    # Python program to illustrate while loop
+    count = 0
+    while (count < 3):   
+        count = count + 1
+        print("Hello LearnPy")
+    </pre>
+    <h3>Output :</h3>
+    <pre>
+
+    Hello LearnPy
+    Hello LearnPy
+    Hello LearnPy
+    </pre>
+    <h2>For Loop</h2>
+    <p> For loops are used for sequential traversal. For example: traversing a list or string or array etc. In Python, there is no C style for loop, i.e., for (i=0; i < n ; i++). There is “for in” loop which is similar to for each loop in other languages. Let us learn how to use for in loop for sequential traversals.</p>
+    <h3>Syntax :</h3>
+    <pre>
+
+    for iterator_var in sequence:
+        statements(s)
+    </pre>
+    <p>It can be used to iterate over a range and iterators.</p>
+    <h2>Example :</h2>
+    <pre>
+
+    # Python program to illustrate for loop
+    # Iterating over range 0 to n-1 
+    n = 4
+    for i in range(0, n):
+        print(i)
+    </pre>
+    <h2>Output :</h2>
+    <pre>
+
+    0
+    1
+    2
+    3
+    </pre>
+    <h2>Nested Loops</h2>
+    <p>A nested loop is a loop inside a loop.</p>
+    <p> The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+    <h3>Example :</h3>
+    <pre>
+        
+    adj = ["red", "big", "tasty"]
+    fruits = ["apple", "banana", "cherry"]
+        
+    for x in adj:
+        for y in fruits:
+            print(x, y)
+    </pre>
+    <h3>Output :</h3>
+    <pre>
+
+    red apple
+    red banana
+    red cherry
+    big apple
+    big banana
+    big cherry  
+    tasty apple
+    tasty banana
+    tasty cherry
+    </pre>
+    <p>Similarly, we can use 'while loop' to perform nested loop</p>
+    <a href="/quiz/loops"><button type="button">Start Quiz</button></a>
+    <!-- <a href="/quiz/{{comments}}"><button type="button">Start Quiz</button></a> -->
+</main>
+{% endblock body %}

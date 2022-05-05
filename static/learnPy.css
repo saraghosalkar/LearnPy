@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+/* side bar temporary */
+.sidenav {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 47px;
+    left: 0;
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+    padding-top: 5px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+}
+
+.sidenav a:hover {
+    background-color: #b3b3b3;
+}
+
+main {
+    margin-left: 180px;
+    /* Same as the width of the sidenav */
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+    padding: 10px 10px;
+    margin-top: 46px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*End Side bar css */
+
+/*Ved navbar CSS*/
+/*.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: #072227;
+    padding-top: 15px;
+    margin-left: 160px; 
+} 
+ .navul{
+    margin-left: 0px;
+    padding: 0px;
+    align-items: flex-start;
+    list-style-type: none;
+} 
+.navli{
+    color: white;
+    display: inline;
+    padding: 10px;
+    font-size: 23px;
+}
+.navlink:link{
+    text-decoration: none;
+    color: green;
+}*/
+/* End ved navbar css */
+
+/* Krishna navbar css */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navli a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* End Krishna navbar css */
+.mainContainer {
+    display: flex;
+}
+
+.table {
+    padding-left: 5px;
+    background-color: #E5E5E5;
+    height: 1000px;
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.tableul {
+    padding: 0px;
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.tableli {
+    padding-bottom: 5px;
+}
+
+.tableli:hover {
+    background-color: #b3b3b3;
+}
+
+.tablelink {
+    text-decoration: none;
+    color: #000;
+}
+
+p {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.install {
+    color: green;
+    text-decoration: underline;
+}
+
+button {
+    /* background-color: #4CAF50; Green */
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit_quiz {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 35vw;
+    cursor: pointer;
+}
+
+.quizpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* .label_option{
+    margin-top: 10px;
+} */
+input[type="radio"] {
+    margin-top: 15px;
+    vertical-align: middle;
+}
+
+.options_class {
+    display: flex;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.input_options {
+    margin-right: 15px;
+}
+
+.link_quiz {
+    padding-left: 35vw;
+}
+
+.result_head {
+    align-items: center;
+}
+
+.result_class {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 524px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    top: auto;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 15px 0 0 0;
+}
+
+/* Snackbar css */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+/* End of snackbar css */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ff1a75;
+    color: white;
+}
+
+pre{
+    background-color: #dddada;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.sidenavL:active{
+    background-color:  #595959;
+}

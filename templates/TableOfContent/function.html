@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<main class="mainBody">
+    <h1>Functions in Python</h1>
+    <p>Python Functions is a block of related statements designed to perform a computational, logical, or evaluative task. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can do the function calls to reuse code contained in it over and over again. </p>
+    <h2>Creating a Function</h2>
+    <p>In Python a function is defined using the def keyword:</p>
+    <h3>Example :</h3>
+    <pre>
+
+    def my_function():
+        print("Hello from a function")
+    </pre>
+    <h2>Calling a Function</h2>
+    <p>After creating a function we can call it by using the name of the function followed by parenthesis containing parameters of that particular function.</p>
+    <h3>Example :</h3>
+    <pre>
+
+    def my_function():
+        print("Hello from a function")
+
+    function()
+    </pre>
+    <h3>Output :</h3>
+    <pre>
+        
+    Hello from a function
+    </pre>
+    <h2>Arguements</h2>
+    <p>Information can be passed into functions as arguments.</p> 
+    <p> Arguments are specified after the function name, inside the parentheses.</p> 
+    <p>You can add as many arguments as you want, just separate them with a comma. The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:</p>
+    <h3>Example : </h3>
+    <pre>
+
+    def evenOdd(x):
+      if (x % 2 == 0):
+          print("even")
+     else:
+         print("odd")
+
+    # Driver code to call the function
+    evenOdd(2)
+    evenOdd(3)
+    </pre>
+    <h3>Output : </h3>
+    <pre>
+
+    even
+    odd
+    </pre>
+    
+    <a href="/quiz/functions"><button type="button">Start Quiz</button></a>
+    <!-- <a href="/quiz/{{comments}}"><button type="button">Start Quiz</button></a> -->
+</main>
+{% endblock body %}

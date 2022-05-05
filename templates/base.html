@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='learnPy.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> {% block title %} {% endblock %} - LearnPy</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navul">
+            <li style="padding-inline: 45px; background: green;"><a class="navlink" href="/">LearnPy</a></li>
+            <li class="navli"><a class="navlink" href="/">Home</a></li>
+            <li class="navli"><a class="navlink" href="#">Videos</a></li>
+            <li class="navli" onclick="Snackbar()"><a class="navlink" href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="mainContainer">
+        <!-- <div class="table">
+            <h3>Table of Content</h3>
+            <ul class="tableul">
+                <li class="tableli">Introduction & Download Python</li>
+                <li class="tableli">Comments, Variables & Datatypes</li>
+                <li class="tableli">Numbers & Operators</li>
+                <li class="tableli">User Input</li>
+                <li class="tableli">Strings & Strings Methods</li>
+                <li class="tableli">Lists</li>
+                <li class="tableli">Tuples</li>
+                <li class="tableli">Set</li>
+                <li class="tableli">Dictionary</li>
+                <li class="tableli">Loops</li>
+                <li class="tableli">Functions</li>
+                <li class="tableli">Lambda</li>
+                <li class="tableli">Arrays</li>
+                <li class="tableli">Class & Object</li>
+                <li class="tableli">Inheritance</li>
+                <li class="tableli">Calendar</li>
+                <li class="tableli">Exception Handling</li>
+                <li class="tableli">File Handling</li>
+            </ul>
+        </div> -->
+        <div class="sidenav">
+            <a href="/" class="sidenavL">Introduction & Download Python</a>
+            <a href="/comments"class="sidenavL">Comments, Variables & Datatypes</a>
+            <a href="/numbers"class="sidenavL">Numbers & Operators</a>
+            <a href="/lists"class="sidenavL">Lists</a>
+            <a href="/tuples"class="sidenavL">Tuples</a>
+            <a href="#contact"class="sidenavL">Set</a>
+            <a href="#contact"class="sidenavL">Dictionary</a>
+            <a href="/loops"class="sidenavL">Loops</a>
+            <a href="/functions"class="sidenavL">Functions</a>
+            <a href="#contact"class="sidenavL">Lambda</a>
+            <a href="#contact"class="sidenavL">Arrays</a>
+        </div>
+        {% block body %}
+        {% endblock body %}
+    </div>
+    <div class="footer">
+        <p>&copy; Reserved | Developed by • Ved Jaiswal • Krishna Khadke • Sara Ghosalkar</p>
+    </div>
+    <div id="snackbar">
+        <a href="https://twitter.com/GhosalkarSara" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/krishnakhadke11/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/ved-jaiswal-48a68520b" target="_blank" class="fa fa-linkedin"></a>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
