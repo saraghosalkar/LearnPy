@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<main class="mainBody">
+    <h1>Arrays in Python</h1>
+    <p>Arrays are used to store multiple values in one single variable</p>
+    <p>Python does not have built-in support for Arrays, but Python Lists can be used instead.</p>
+    <p>To work with arrays in Python you will have to import a library, like the NumPy library.</p>
+    <p>An array is a special variable, which can hold more than one value at a time.</p>
+    <h3>Example :</h3>
+    <pre>
+
+        cars = ["Ford", "Volvo", "BMW"]
+    </pre>
+    <h2>The Length of an Array</h2>
+    <p>Use the len() method to return the length of an array (the number of elements in an array).</p>
+    <pre>
+        x = len(cars)
+    </pre>
+    <a href="/quiz/arrays"><button type="button">Start Quiz</button></a>
+    <!-- <a href="/quiz/{{comments}}"><button type="button">Start Quiz</button></a> -->
+</main>
+{% endblock body %}

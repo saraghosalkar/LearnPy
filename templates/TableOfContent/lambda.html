@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title %}
+{% block body %}
+<main class="mainBody">
+    <h1>Python Lambda</h1>
+    <p>A lambda function is a small anonymous function.</p>
+    <p>A lambda function can take any number of arguments, but can only have one expression.</p>
+    <h2>Syntax</h2>
+    <pre>
+
+        lambda arguments : expression
+    </pre>
+    <p>The expression is executed and the result is returned:</p>
+    <h3>Example :</h3>
+    <pre>
+
+        x = lambda a : a + 10
+        print(x(5))
+    </pre>
+    <p>Lambda functions can take any number of arguments:</p>
+    <h3>Example :</h3>
+    <pre>
+
+        x = lambda a, b : a * b
+        print(x(5, 6))
+    </pre>
+    <h2>Why Use Lambda Functions?</h2>
+    <p>The power of lambda is better shown when you use them as an anonymous function inside another function.</p>
+    <h4>Use lambda functions when an anonymous function is required for a short period of time.</h4>
+    
+    
+    <a href="/quiz/tuples"><button type="button">Start Quiz</button></a>
+    <!-- <a href="/quiz/{{comments}}"><button type="button">Start Quiz</button></a> -->
+</main>
+{% endblock body %}

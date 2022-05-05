@@ -111,6 +111,10 @@ def Dictionary():
 def functions():
     return render_template('TableOfContent/function.html')
 
+@app.route('/lambda')
+def lambda1():
+    return render_template('TableOfContent/lambda.html')
+
 @app.route('/lists')
 def lists():
     return render_template('TableOfContent/lists.html')
@@ -127,9 +131,9 @@ def numbers():
 def sets():
     return render_template('TableOfContent/set.html')
 
-# @app.route('/string')
-# def string():
-#     return render_template('TableOfContent/string.html')
+@app.route('/arrays')
+def arrays():
+     return render_template('TableOfContent/arrays.html')
 
 @app.route('/tuples')
 def tuples():
